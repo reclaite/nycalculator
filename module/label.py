@@ -1,8 +1,18 @@
+"""
+Description:
+Custom labels file for the New Year application
+with updatable timers etc.
+
+Creation date: 01/11/2022
+
+Author: Aleksandr Gordienko
+Version: 0.11A
+"""
 import abc
 import datetime
 import customtkinter as ctk
 
-import formatter
+from module import formatter
 
 
 class UpdatedLabel(ctk.CTkLabel):
@@ -28,9 +38,10 @@ class UpdatedLabel(ctk.CTkLabel):
 
 
 class TimeLabel(UpdatedLabel):
-
-    app = UpdatedLabel.app
-
+    """
+    Label inherited class to show dynamically
+    updating time clock
+    """
     def __init__(self, app, **kw):
         super().__init__(app, **kw)
 
@@ -41,7 +52,10 @@ class TimeLabel(UpdatedLabel):
 
 
 class NewYearLabel(UpdatedLabel):
-
+    """
+    Label inherited class to count time
+    before next New Year celebration
+    """
     def __init__(self, app, **kw):
         super().__init__(app, **kw)
 

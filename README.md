@@ -4,4 +4,4 @@ It is simple application, just my homework at college. Written on **Python** usi
 
 ### Preview
 
-![Application preview](/assets/preview.png)
+![Application preview](/documentation_assets/preview.png)
