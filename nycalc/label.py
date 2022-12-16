@@ -12,7 +12,7 @@ import abc
 import datetime
 import customtkinter as ctk
 
-from module import formatter
+from nycalc import formatter
 
 
 class UpdatedLabel(ctk.CTkLabel):

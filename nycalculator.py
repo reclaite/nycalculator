@@ -15,8 +15,8 @@ Version: 0.11A
 
 import customtkinter
 
-from module import fontloader
-from module.label import *
+from nycalc import fontloader
+from nycalc.label import *
 
 
 class NewYearApplication(customtkinter.CTk):
