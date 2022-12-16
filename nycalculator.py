@@ -96,7 +96,7 @@ class NewYearApplication(customtkinter.CTk):
         )
         new_year_label = NewYearLabel(
             time_frame,
-            wraplength=800,
+            wraplength=600,
             text_font=(self.font, 28)
         )
         new_year_label.place(
