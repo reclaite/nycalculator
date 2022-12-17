@@ -56,6 +56,8 @@ class NewYearLabel(UpdatedLabel):
     Label inherited class to count time
     before next New Year celebration
     """
+    remain_time = 0
+
     def __init__(self, app, **kw):
         super().__init__(app, **kw)
 
@@ -64,7 +66,7 @@ class NewYearLabel(UpdatedLabel):
         now_stamp = now.timestamp()
         new_year_stamp = datetime.datetime(now.year + 1, 1, 1).timestamp()
 
-        time_stamp = new_year_stamp - now_stamp + 1
+        time_stamp = self.remain_time = new_year_stamp - now_stamp + 1
         days = time_stamp // 86400
         time_stamp = time_stamp % (24 * 3600)
         hour = time_stamp // 3600
